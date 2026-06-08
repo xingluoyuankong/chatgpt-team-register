@@ -415,17 +415,8 @@ def main():
             proxy = proxies[i % len(proxies)] if proxies else None
             future = executor.submit(register_account, i, args.total, proxy)
             futures.append(future)
-            
-            # 控制并发
-            if len(futures) >= args.workers:
-                done, _ = as_completed(futures).__next__()
-                if done.result():
-                    success += 1
-                else:
-                    fail += 1
-                futures = [f for f in futures if not f.done()]
         
-        # 等待剩余任务
+        # 等待所有任务完成
         for future in as_completed(futures):
             if future.result():
                 success += 1
