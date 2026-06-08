@@ -85,7 +85,7 @@ echo ============================================================
 echo.
 
 REM 运行注册
-python chatgpt_register_with_proxy.py --total %total% --workers %workers%
+python chatgpt_register_auto_proxy.py --total %total% --workers %workers%
 
 echo.
 echo ============================================================

@@ -30,7 +30,7 @@ pip install requests curl_cffi -q
 
 echo.
 echo [开始注册...]
-python chatgpt_register_with_proxy.py --total 1000 --workers 50
+python chatgpt_register_auto_proxy.py --total 1000 --workers 20
 
 echo.
 echo 完成！检查 cpa_accounts.txt
