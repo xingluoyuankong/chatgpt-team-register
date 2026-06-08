@@ -1,0 +1,23 @@
+# 代理列表
+# 格式: http://ip:port 或 socks5://ip:port 或 http://user:pass@ip:port
+# 每行一个代理，# 开头为注释
+
+# 示例（请替换为你的真实住宅代理）:
+# http://1.2.3.4:8080
+# http://user:pass@proxy.example.com:8080
+# socks5://5.6.7.8:1080
+
+# 推荐：住宅代理（成功率 90%+）
+# -------------------------------------------------------------------
+# Bright Data: https://brightdata.com
+# Oxylabs: https://oxylabs.io
+# Smartproxy: https://smartproxy.com
+# -------------------------------------------------------------------
+
+# 免费：IPRoyal (注册送免费额度)
+# https://iproyal.com
+
+# 注意：
+# 1. 数据中心代理会失败（Cloudflare 拦截）
+# 2. 必须使用住宅代理
+# 3. 免费代理成功率 < 5%
